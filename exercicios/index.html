@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Atividade 4 - Sistema de prioridade</title>
+    <title>Atividades javascript</title>
 </head>
+
 <body>
+    <!-- Atividade 4 -->
     <h1>Sistema de prioridade</h1>
 
     <label for="campoPrioridade">Digite a prioridade (urgente, alta, media, baixa)</label>
@@ -14,6 +17,54 @@
     <button onClick="verificarPrioridade()">Verificar</button>
 
     <p id="resultado3"></p>
+
+
+    <!-- Atividade 5 -->
+    <h2>Tarefa atrasada</h2>
+    <label for="prioridade">Prioridade:</label>
+    <select id="prioridade">
+        <option value="baixa">Baixa</option>
+        <option value="media">Media</option>
+        <option value="alta">Alta</option>
+        <option value="urgente">Urgente</option>
+    </select>
+    <br>
+    <label for="atrasada">Tarefa atrasada?</label>
+    <input type="checkbox" id="atrasada">
+    <button onclick="verificarTarefa()">Verificar Tarefa</button>
+    <p id="resultado4"></p>
+
+
+    <!-- Atividade 6 -->
+    <h2>Login simples</h2>
+    <input type="text" id="inputUsuario" placeholder="digite seu nome de usuário">
+    <br>
+    <input type="password" id="inputSenha" placeholder="digite sua senha">
+    <button onclick="verificarLogin()">Verificar</button>
+
+    <p id="resultado5"></p>
+
+    <!-- Atividade 7 -->
+    <h2>Ternário</h2>
+    <input type="Number" id="idade1" placeholder="Digite sua idade!">
+    <button onclick="verificarIdade1()">Verificar</button>
+    <p id="situacao"></p>
+
+    <!-- Atividade 8 -->
+    <h2>Sistema de desconto</h2>
+    <label for="InputValor">Valor da compra:</label>
+    <input type="number" id="valorCompra" value="350">
+
+    <label for="InputCliente">Cliente VIP?</label>
+    <input type="checkbox" id="clienteVip" checked>
+
+    <br><br>
+
+    <button onclick="calcularDesconto()">Calcular</button>
+
+    <p id="resultado6"></p>
+
     <script src="script.js"></script>
 </body>
+
 </html>
