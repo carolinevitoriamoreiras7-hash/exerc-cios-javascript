@@ -2,14 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Atividades javascript</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
 <body>
+  <!-- Atividade 1-->
+  <h2>Verificador de Idade</h1>
+
+    <input type="number" id="Idade" placeholder="Digite sua idade">
+
+    <button onclick="verificarIdade()">Verificar</button>
+
+    <p id="Resultado"></p>
+
+
+    <!-- Atividade 2-->
+    <h2>Número positivo, negativo ou zero</h2>
+    <input type="number" id="numero" placeholder="Digite seu número">
+    <button onclick="verificarNumero()">Verificar</button>
+
+    <p id="resultado1"></p>
+
+    <!-- Atividade 3-->
+    <h2>Aprovação do aluno</h2>
+
+    <input type="number" id="nota" placeholder="Digite sua nota">
+    <button onclick="VerificarNota()">Verificar</button>
+
+    <p id="resultado2"></p>
+
+
     <!-- Atividade 4 -->
-    <h1>Sistema de prioridade</h1>
+    <h2>Sistema de prioridade</h2>
 
     <label for="campoPrioridade">Digite a prioridade (urgente, alta, media, baixa)</label>
     <br>
@@ -19,20 +45,21 @@
     <p id="resultado3"></p>
 
 
-    <!-- Atividade 5 -->
+    <!-- Atividade 5-->
     <h2>Tarefa atrasada</h2>
     <label for="prioridade">Prioridade:</label>
-    <select id="prioridade">
-        <option value="baixa">Baixa</option>
-        <option value="media">Media</option>
-        <option value="alta">Alta</option>
-        <option value="urgente">Urgente</option>
+    <select id="prioridade1">
+      <option value="baixa">Baixa</option>
+      <option value="media">Media</option>
+      <option value="alta">Alta</option>
+      <option value="urgente">Urgente</option>
     </select>
     <br>
     <label for="atrasada">Tarefa atrasada?</label>
     <input type="checkbox" id="atrasada">
     <button onclick="verificarTarefa()">Verificar Tarefa</button>
     <p id="resultado4"></p>
+
 
 
     <!-- Atividade 6 -->
@@ -64,7 +91,29 @@
 
     <p id="resultado6"></p>
 
+    <!-- Atividade 9-->
+    <h2>Validação de tarefa</h2>
+    <button onclick="testarComTarefa()">Testar com tarefa válida</button>
+    <button onclick="testarSemTarefa()">Testar sem tarefa</button>
+    <p id="resultado9"></p>
+
+    <!-- Atividade 10-->
+      <h2>Sistema de atendimento</h2>
+    <label for="opcao10"></label>
+    <select id="opcao10">
+      <option value="1">1- Consultar pedido</option>
+      <option value="2">2- Cancelar pedido</option>
+      <option value="3">3- Falar com atendente</option>
+      <option value="4">4- Cancelar atendimento</option>
+    </select>
+    <br><br>
+    <button onclick="verificarOpcao()">Verificar</button>
+    <p id="resultado10"></p>
+
+
     <script src="script.js"></script>
+
+
 </body>
 
 </html>
